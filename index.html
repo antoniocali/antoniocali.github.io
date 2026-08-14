@@ -117,11 +117,11 @@
               <p class="nf-sep">─────────────────────</p>
               <p class="nf-row"><span class="nf-key">Name</span>Antonio Davide Calì</p>
               <p class="nf-row"><span class="nf-key">Role</span>Staff Data Engineer</p>
-              <p class="nf-row"><span class="nf-key">Host</span>Just Eat Takeaway.com</p>
+              <p class="nf-row"><span class="nf-key">Host</span>Zego</p>
               <p class="nf-row"><span class="nf-key">Uptime</span>10+ years</p>
               <p class="nf-row"><span class="nf-key">Location</span>London, UK</p>
               <p class="nf-row"><span class="nf-key">Languages</span>Python, Scala, Go, Java</p>
-              <p class="nf-row"><span class="nf-key">Stack</span>Flink, Kafka, Spark, dbt</p>
+              <p class="nf-row"><span class="nf-key">Stack</span>Flink, Iceberg, Kafka, dbt</p>
               <p class="nf-row"><span class="nf-key">Speaker</span>Flink Forward 2025</p>
               <div class="nf-swatches">
                 <span class="nf-swatch" style="background:var(--green-bright)"></span>
@@ -144,10 +144,10 @@
       <h1>Antonio Davide Cal<span class="accent">ì</span></h1>
       <p class="role">Staff Data Engineer <span class="dim">// Streaming &amp; Distributed Systems</span></p>
       <p class="pitch">
-        10+ years building large-scale streaming and batch data platforms across fintech, retail, and
-        consumer tech. Specialised in <span class="kw">Apache Flink</span>, <span class="kw">Kafka</span>,
-        and self-service data infrastructure that turns complex distributed systems into accessible
-        developer tooling. Speaker at <span class="kw">Flink Forward 2025</span>.
+        10+ years building large-scale streaming and batch data platforms across fintech, retail, insurance,
+        and consumer tech. Specialised in <span class="kw">Apache Flink</span>, <span class="kw">Kafka</span>,
+        and Iceberg lakehouse architecture, with a recurring focus on self-service data infrastructure and
+        GDPR/PII governance built directly into the platform. Speaker at <span class="kw">Flink Forward 2025</span>.
       </p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://www.linkedin.com/in/antoniodavidecali" target="_blank" rel="noopener">$ connect --linkedin</a>
@@ -213,9 +213,47 @@
         <div class="commit-rail"><span class="commit-node"></span></div>
         <div class="commit-body">
           <div class="commit-head">
-            <span class="commit-hash">a1f3e9c</span>
+            <span class="commit-hash">e28d4f1</span>
             <span class="commit-branch">HEAD -&gt; main</span>
-            <span class="commit-date">Nov 2024 — Present</span>
+            <span class="commit-date">Apr 2026 — Present</span>
+          </div>
+          <h3 class="commit-title">Staff Data Engineer @ Zego</h3>
+          <p class="commit-loc">London, UK</p>
+          <p class="commit-msg">
+            Own the Data Engineering platform end-to-end — Iceberg lakehouse infrastructure and Snowflake/dbt
+            analytics — leading the introduction of Apache Flink and Protobuf-based PII/GDPR governance across
+            the platform.
+          </p>
+          <ul class="commit-bullets">
+            <li>Fully scoped and led the introduction of Apache Flink to Zego's data platform, driving the
+              migration of streaming ingestion from a legacy Kinesis/Scala/Protobuf pipeline to a Flink-based
+              forwarder.</li>
+            <li>Leading GDPR/PII governance by extending the company's Protobuf schema contract with
+              field-level PII annotations, driving automatic PII derivation and masking across the data lake
+              and Snowflake's B2B/B2C domains.</li>
+            <li>Own Iceberg lakehouse infrastructure (Terraform + AWS S3/IAM, Polaris catalog) and its
+              Snowflake integration across staging and production environments.</li>
+            <li>Evaluated OLake (Debezium-based database-to-Iceberg replication) and a Kubernetes CRD for
+              Polaris catalog management as ingestion PoCs, contributing upstream fixes to the open-source
+              <code>olake-helm</code> Helm chart.</li>
+          </ul>
+          <div class="tag-row small">
+            <span class="tag tag-diff">+Python</span><span class="tag tag-diff">+Scala</span>
+            <span class="tag tag-diff">+Protobuf</span><span class="tag tag-diff">+Flink</span>
+            <span class="tag tag-diff">+Iceberg</span><span class="tag tag-diff">+Snowflake</span>
+            <span class="tag tag-diff">+dbt</span><span class="tag tag-diff">+Airflow</span>
+            <span class="tag tag-diff">+Terraform</span><span class="tag tag-diff">+Kubernetes</span>
+            <span class="tag tag-diff">+AWS</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="commit">
+        <div class="commit-rail"><span class="commit-node"></span></div>
+        <div class="commit-body">
+          <div class="commit-head">
+            <span class="commit-hash">a1f3e9c</span>
+            <span class="commit-date">Nov 2024 — Apr 2026</span>
           </div>
           <h3 class="commit-title">Staff Data Engineer @ Just Eat Takeaway.com</h3>
           <p class="commit-loc">London, UK</p>
@@ -484,7 +522,7 @@
               <span class="f-mode">lrwxrwxrwx</span>
               <span class="f-name">apache-airflow</span>
               <span class="f-arrow">→</span>
-              <span class="f-desc">Contributor — Apache Airflow &amp; other open-source data infra projects.</span>
+              <span class="f-desc">Contributor — Apache Airflow, OLake (datazip-inc/olake-helm) &amp; other open-source data infra projects.</span>
               <span class="tag tag-purple">Contributor</span>
             </a>
           </li>

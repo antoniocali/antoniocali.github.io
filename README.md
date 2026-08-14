@@ -14,8 +14,13 @@ index.html          # single-page site
 assets/css/style.css
 assets/js/main.js   # typing effect, scroll reveal, background canvas
 assets/img/         # profile photo
-assets/*.pdf        # downloadable résumé
+assets/*.pdf        # downloadable résumé (compiled from cv/cv.typ)
+cv/cv.typ           # résumé source (Typst)
+cv/cv.pdf           # compiled résumé
 ```
+
+Résumé changes go through `cv/cv.typ` (compile with `typst compile cv/cv.typ`), then copy the
+output over `assets/Antonio_Davide_Cali_CV.pdf`.
 
 ## Local preview
 
