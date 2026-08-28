@@ -1,8 +1,8 @@
-# antoniocali.github.io
+# calific.io
 
 Personal portfolio / CV site for Antonio Davide Calì — Staff Data Engineer.
 
-Live at [antoniocali.github.io](https://antoniocali.github.io).
+Live at [calific.io](https://calific.io).
 
 Static site, no build step: plain HTML, CSS, and vanilla JS, deployed via GitHub Pages
 from the `main` branch.
